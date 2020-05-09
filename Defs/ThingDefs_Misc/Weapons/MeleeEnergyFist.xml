@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <Verse.ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>CW_EnergyClaw</defName>
+        <label>Energy claw</label>
+        <description>A massive mechanized glove wired to the forearm with a retractable claw extension. The weapon system controls an enhanced servo motor for hydraulic power in close combat. Capable of hitting multiple targets and going through metal like butter.\n\nEnergy Claws were favored by they oldest of the Space Marine Clans. The bravest among them even broke into Tanks or climbed onto Mechs to destroy them from within.</description>
+        <graphicData>
+            <texPath>Things/WeaponMelee/EnergyClaw</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>CW_BatteryRecharge</soundInteract>
+        <techLevel>Ultra</techLevel>
+        <weaponTags>
+            <li>MeleeSpacer</li>
+            <li>ADR2</li>
+            <li>TierTwoHigh</li>
+            <li>Futuristic</li>
+        </weaponTags>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+        <statBases>
+            <Bulk>8</Bulk>
+            <MarketValue>7800</MarketValue>
+            <Mass>4.75</Mass>
+            <WorkToMake>66500</WorkToMake>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.25</MeleeCritChance>
+            <MeleeParryChance>0.5</MeleeParryChance>
+            <MeleeDodgeChance>0.7</MeleeDodgeChance>
+            <MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
+        </equippedStatOffsets>
+        <tools>
+            <tools>
+                <li>
+                    <label>Back stab</label>
+                    <capacities>
+                        <li>Stab</li>
+                    </capacities>
+                    <power>30</power>
+                    <armorPenetrationSharp>13</armorPenetrationSharp>
+                    <cooldownTime>1.0</cooldownTime>
+                    <chanceFactor>0.05</chanceFactor>
+                    <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+                </li>
+                <li>
+                    <label>Energy burst</label>
+                    <capacities>
+                        <li>Blunt</li>
+                        <li>Poke</li>
+                    </capacities>
+                    <power>12</power>
+                    <armorPenetrationSharp>12</armorPenetrationSharp>
+                    <cooldownTime>0.25</cooldownTime>
+                    <chanceFactor>0.2</chanceFactor>
+                    <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+                </li>
+                <li>
+                    <label>Armor scratch</label>
+                    <capacities>
+                        <li>Scratch</li>
+                    </capacities>
+                    <power>11</power>
+                    <armorPenetrationSharp>11</armorPenetrationSharp>
+                    <cooldownTime>0.25</cooldownTime>
+                    <chanceFactor>1.0</chanceFactor>
+                    <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+                </li>
+                <li>
+                    <label>Claw cut</label>
+                    <capacities>
+                        <li>Cut</li>
+                    </capacities>
+                    <power>10</power>
+                    <armorPenetrationSharp>10</armorPenetrationSharp>
+                    <cooldownTime>0.25</cooldownTime>
+                    <chanceFactor>1.5</chanceFactor>
+                    <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </tools>
+        <thingCategories>
+            <li>AgileMelee</li>
+            <li>SharpMelee</li>
+            <li>CW_CyborgWeaponry</li>
+        </thingCategories>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>MechWeaponCraftingWorkTable</li>
+            </recipeUsers>
+            <researchPrerequisite>CW_CyberneticWarfare</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>19</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Wire>25</Wire>
+            <ComponentSpacer>5</ComponentSpacer>
+            <MagneticMaterial>8</MagneticMaterial>
+            <ElectronicComponents>4</ElectronicComponents>
+            <Weapon_Parts>4</Weapon_Parts>
+        </costList>
+        <comps>
+            <li>
+                <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
+    </Verse.ThingDef>
+</Defs>

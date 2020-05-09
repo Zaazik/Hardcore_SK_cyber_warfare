@@ -4,7 +4,7 @@
   <!-- Cyborg -->
     <ThingCategoryDef>
       <defName>CW_CyborgWeaponry</defName>
-      <label>cyborg weaponry</label>
+      <label>Cyborg weaponry</label>
       <parent>Weapons</parent>
 	  </ThingCategoryDef>
 

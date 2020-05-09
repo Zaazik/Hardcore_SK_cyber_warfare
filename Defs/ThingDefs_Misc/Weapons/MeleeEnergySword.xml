@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <Verse.ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>CW_EnergySword</defName>
+        <label>Energy sword</label>
+        <description>A fluctuative power sword unloading while slashing and stabbing. The bundled energy can force the blade through the heaviest of platings. Made for the hands of Space Marines.</description>
+        <graphicData>
+            <texPath>Things/WeaponMelee/EnergySword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>CW_BatteryRecharge</soundInteract>
+        <techLevel>Ultra</techLevel>
+        <weaponTags>
+            <li>MeleeSpacer</li>
+            <li>ADR2</li>
+            <li>TierTwoHigh</li>
+            <li>Futuristic</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>75</costStuffCount>
+        <statBases>
+            <Bulk>8</Bulk>
+            <MarketValue>8000</MarketValue>
+            <Mass>5.5</Mass>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+        <equippedAngleOffset>-25</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.75</MeleeCritChance>
+            <MeleeParryChance>0.10</MeleeParryChance>
+            <MeleeDodgeChance>0.8</MeleeDodgeChance>
+            <MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>Energy burst</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>50.0</power>
+                <armorPenetrationBlunt>1</armorPenetrationBlunt>
+                <armorPenetrationSharp>1</armorPenetrationSharp>
+                <chanceFactor>0.1</chanceFactor>
+                <cooldownTime>1.0</cooldownTime>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>Slide raze</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>35.0</power>
+                <armorPenetrationBlunt>1</armorPenetrationBlunt>
+                <armorPenetrationSharp>1</armorPenetrationSharp>
+                <cooldownTime>1.0</cooldownTime>
+                <chanceFactor>0.3</chanceFactor>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>Slash</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>30.0</power>
+                <armorPenetrationBlunt>1</armorPenetrationBlunt>
+                <armorPenetrationSharp>1</armorPenetrationSharp>
+                <chanceFactor>1.0</chanceFactor>
+                <cooldownTime>1.0</cooldownTime>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>SharpMelee</li>
+            <li>HeavyMelee</li>
+            <li>CW_CyborgWeaponry</li>
+        </thingCategories>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>MechWeaponCraftingWorkTable</li>
+            </recipeUsers>
+            <researchPrerequisite>CW_CyberneticWarfare</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>19</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <BetaPoly>25</BetaPoly>
+            <ComponentSpacer>5</ComponentSpacer>
+            <MagneticMaterial>15</MagneticMaterial>
+            <ElectronicComponents>4</ElectronicComponents>
+            <Weapon_Parts>4</Weapon_Parts>
+        </costList>
+        <comps>
+            <li>
+                <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
+    </Verse.ThingDef>
+</Defs>

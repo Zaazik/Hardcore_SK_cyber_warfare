@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <Verse.ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>CW_PowerFist</defName>
+        <label>Power fist</label>
+        <description>A massive mechanized glove wired to the forearm for hydraulic power bursts and punches. It is vicious in combat, and its powerful mini-servos can crush a skull like a natural hand crushes an egg. This prototype extension was created in a hidden hightech laboratorium and fabricated by their very own underground facilities. Though it was developed in imperial times, their independent state was preserved until now.\n\nStrengthens the soldiers ability to open doors and to create those passages, where they need to be. Grants pushback and pummel mechanics.\n\n&lt;i&gt;Only in death does duty end. Even a man who has nothing can still offer his life. As the Emperor protects, so must we. Peace is not in my vocabulary.&lt;/i&gt;</description>
+        <graphicData>
+            <texPath>Things/WeaponMelee/PowerFist</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>CW_BatteryRecharge</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>MeleeSpacer</li>
+            <li>ADR2</li>
+            <li>TierTwoHigh</li>
+            <li>Futuristic</li>
+        </weaponTags>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <Bulk>8</Bulk>
+            <Mass>5.5</Mass>
+            <WorkToMake>57500</WorkToMake>
+        </statBases>
+        <equippedAngleOffset>-45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.25</MeleeCritChance>
+            <MeleeParryChance>0.5</MeleeParryChance>
+            <MeleeDodgeChance>0.8</MeleeDodgeChance>
+            <MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>Back stab</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>30</power>
+                <armorPenetrationSharp>13</armorPenetrationSharp>
+                <cooldownTime>1.0</cooldownTime>
+                <chanceFactor>0.05</chanceFactor>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>Energy burst</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>12</power>
+                <armorPenetrationSharp>12</armorPenetrationSharp>
+                <cooldownTime>0.25</cooldownTime>
+                <chanceFactor>0.2</chanceFactor>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>Armor scratch</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>11</power>
+                <armorPenetrationSharp>11</armorPenetrationSharp>
+                <cooldownTime>0.25</cooldownTime>
+                <chanceFactor>1.0</chanceFactor>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>Claw cut</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>10</power>
+                <armorPenetrationSharp>10</armorPenetrationSharp>
+                <cooldownTime>0.25</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>AgileMelee</li>
+            <li>SharpMelee</li>
+            <li>CW_CyborgWeaponry</li>
+        </thingCategories>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>MechWeaponCraftingWorkTable</li>
+            </recipeUsers>
+            <researchPrerequisite>CW_CyberneticWarfare</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>18</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <AdvMechanism>12</AdvMechanism>
+            <ComponentSpacer>8</ComponentSpacer>
+            <Weapon_Parts>4</Weapon_Parts>
+        </costList>
+        <comps>
+            <li>
+                <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
+    </Verse.ThingDef>
+</Defs>
